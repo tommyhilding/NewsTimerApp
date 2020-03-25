@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:screenOrientation="portrait"
+        android:padding="20dp">
+
+        <ImageView
+        android:layout_width="220dp"
+        android:layout_height="76.34dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/NewsTimerLogo"/>
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="E-post"/>
+        <EditText
+            android:id="@+id/account_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/nt_edit_text"
+            local:MvxBind="Text UserName"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="E-post"/>
+        <EditText
+            android:id="@+id/account_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/nt_edit_text"
+            local:MvxBind="Text Password"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NTButton"
+            android:text="Login"
+            local:MvxBind="Click LoginCommand"/>
+    </LinearLayout>
+</ScrollView>
+

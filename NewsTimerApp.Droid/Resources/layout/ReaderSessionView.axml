@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:layout_margin="16dp"
+        android:textColor="@color/tufts_blue"
+        android:text="Status"/>
+  
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:layout_margin="16dp"
+        android:textColor="@color/tufts_blue"
+        local:MvxBind="Text Session.DuarationSec"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/NTButton"
+            android:text="Stäng"
+            local:MvxBind="Click CloseCommand"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/NTButton"
+            android:text="Avsluta"
+            local:MvxBind="Click EndCommand"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
